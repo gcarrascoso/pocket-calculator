@@ -1,0 +1,47 @@
+button {
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  padding: none;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #c6dbff;
+  border: none;
+}
+
+button:hover {
+  background-color: #9fbef4
+}
+
+button:active {
+  background-color: #9fbef4;
+  transform: translateY(4px);
+}
+
+p {
+  display: block;
+  width: 338px;
+  height: 50px;
+  padding: 14px;
+  border: 0.1em solid #9fbef4;
+  font-size: 30px;
+  text-align: right;
+  outline: none;
+  margin-bottom: 5px;
+  margin-top: 50px
+}
+
+.wide {
+  width: 145px
+}
+
+.tall {
+  height: 145px;
+}
+
+.superwide {
+  width: 370px;
+}
