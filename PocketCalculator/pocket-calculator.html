@@ -10,39 +10,41 @@
 
   <body>
     <div align = "center">
-      <p id = "output">
+      <form name = "form">
+        <input class = "textview" name = "textview">
+      </form>
     </div>
 
     <div align = "center">
       <table>
         <tr>
-          <td><button onclick = "insertOne()">1</button>
-          <td><button>2</button>
-          <td><button>3</button>
-          <td><button>+</button>
-          <td><button>%</button>
+          <td><button value = "1" onclick = "insert(1)">1</button>
+          <td><button value = "2" onclick = "insert(2)">2</button>
+          <td><button value = "3" onclick = "insert(3)">3</button>
+          <td><button value = "+">+</button>
+          <td><button value = "%">%</button>
         </tr>
         <tr>
-          <td><button>4</button>
-          <td><button>5</button>
-          <td><button>6</button>
-          <td><button>-</button>
-          <td><button>+/-</button>
+          <td><button value = "4" onclick = "insert(4)">4</button>
+          <td><button value = "5" onclick = "insert(5)">5</button>
+          <td><button value = "6" onclick = "insert(6)">6</button>
+          <td><button value = "-">-</button>
+          <td><button value = "+/-">+/-</button>
         </tr>
         <tr>
-          <td><button>7</button>
-          <td><button>8</button>
-          <td><button>9</button>
-          <td><button>x</button>
-          <td rowspan = "2"><button class = "tall">AC</button>
+          <td><button value = "7" onclick = "insert(7)">7</button>
+          <td><button value = "8" onclick = "insert(8)">8</button>
+          <td><button value = "9" onclick = "insert(9)">9</button>
+          <td><button value = "x">x</button>
+          <td rowspan = "2"><button id = "tall" value = "AC" onclick = "clean()">AC</button>
         </tr>
         <tr>
-          <td colspan = "2"><button class = "wide">0</button>
-          <td><button>.</button>
-          <td><button>/</button>
+          <td colspan = "2"><button value = "0" id = "wide" onclick = "insert(0)">0</button>
+          <td><button value = ".">.</button>
+          <td><button value = "/">/</button>
         </tr>
         <tr>
-          <td colspan = "5"><button class = "superwide">=</button>
+          <td colspan = "5"><button value = "=" id = "superwide">=</button>
       </table>
 
   </body>
