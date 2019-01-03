@@ -10,6 +10,7 @@ button {
   color: #fff;
   background-color: #c6dbff;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
@@ -21,7 +22,7 @@ button:active {
   transform: translateY(4px);
 }
 
-p {
+.textview {
   display: block;
   width: 338px;
   height: 50px;
@@ -34,14 +35,14 @@ p {
   margin-top: 50px
 }
 
-.wide {
+#wide {
   width: 145px
 }
 
-.tall {
+#tall {
   height: 145px;
 }
 
-.superwide {
+#superwide {
   width: 370px;
 }
