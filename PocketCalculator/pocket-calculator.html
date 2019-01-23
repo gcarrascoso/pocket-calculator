@@ -3,49 +3,52 @@
 <html>
 
   <head>
-    <title>Problem Set 6</title>
+    <title>My Pocket Calculator</title>
     <link rel="stylesheet" type="text/css" href="css/pocket-calculator.css"/>
     <script type="text/javascript" src="js/pocket-calculator.js"></script>
   </head>
 
   <body>
+
     <div align = "center">
-      <form name = "form">
-        <input class = "textview" name = "textview">
-      </form>
+      <img id = "title" src = "http://www.firstcomicsnews.com/wp-content/uploads/2016/09/Amazing-Spider-Man-Logo-600x253.png">
+      <p class = "output" id = "output"></p>
     </div>
 
     <div align = "center">
       <table>
         <tr>
-          <td><button value = "1" onclick = "insert(1)">1</button>
-          <td><button value = "2" onclick = "insert(2)">2</button>
-          <td><button value = "3" onclick = "insert(3)">3</button>
-          <td><button value = "+">+</button>
-          <td><button value = "%">%</button>
+          <td><button class = "number" onclick = "numberOne()" >1</button>
+          <td><button class = "number" onclick = "numberTwo()">2</button>
+          <td><button class = "number" onclick = "numberThree()">3</button>
+          <td><button id = "addSign" class = "operator" onclick = "addSign()">+</button>
+          <td><button class = "mod" onclick = "percent()">%</button>
         </tr>
         <tr>
-          <td><button value = "4" onclick = "insert(4)">4</button>
-          <td><button value = "5" onclick = "insert(5)">5</button>
-          <td><button value = "6" onclick = "insert(6)">6</button>
-          <td><button value = "-">-</button>
-          <td><button value = "+/-">+/-</button>
+          <td><button class = "number" onclick = "numberFour()">4</button>
+          <td><button class = "number" onclick = "numberFive()">5</button>
+          <td><button class = "number" onclick = "numberSix()">6</button>
+          <td><button class = "operator" onclick = "minusSign()">-</button>
+          <td><button class = "mod" onclick = "opposite()">+/-</button>
         </tr>
         <tr>
-          <td><button value = "7" onclick = "insert(7)">7</button>
-          <td><button value = "8" onclick = "insert(8)">8</button>
-          <td><button value = "9" onclick = "insert(9)">9</button>
-          <td><button value = "x">x</button>
-          <td rowspan = "2"><button id = "tall" value = "AC" onclick = "clean()">AC</button>
+          <td><button class = "number" onclick = "numberSeven()">7</button>
+          <td><button class = "number" onclick = "numberEight()">8</button>
+          <td><button class = "number" onclick = "numberNine()">9</button>
+          <td><button class = "operator" onclick = "multiplySign()">x</button>
+          <td rowspan = "2"><button  class = "mod" id = "tall" onclick = "clean()">AC</button>
         </tr>
         <tr>
-          <td colspan = "2"><button value = "0" id = "wide" onclick = "insert(0)">0</button>
-          <td><button value = ".">.</button>
-          <td><button value = "/">/</button>
+          <td colspan = "2"><button classs = "number" id = "wide" onclick = "numberZero()">0</button>
+          <td><button id = "decimalPlace" onclick = "decimalPlace()">.</button>
+          <td><button class = "operator" onclick = "divideSign()">/</button>
         </tr>
         <tr>
-          <td colspan = "5"><button value = "=" id = "superwide">=</button>
+          <td colspan = "5"><button class = "operator" id = "superwide" onclick = "equals()">=</button>
       </table>
+
+      <img id = "spiderman" src = "http://pngimg.com/uploads/spider_man/spider_man_PNG89.png">
+      <img id = "spiderman2" src = "http://pngimg.com/uploads/spider_man/spider_man_PNG89.png">
 
   </body>
 
