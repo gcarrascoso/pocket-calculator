@@ -1,4 +1,9 @@
+body {
+  background-color: #447BBE;
+}
+
 button {
+  overflow: inherit;
   height: 70px;
   width: 70px;
   display: inline-block;
@@ -8,31 +13,36 @@ button {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #c6dbff;
+  background-color: #DF1F2D;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #9fbef4
+  background-color: #B11313
 }
 
 button:active {
-  background-color: #9fbef4;
+  background-color: #B11313;
   transform: translateY(4px);
 }
 
-.textview {
+p {
+  background-color: #fff;
+}
+
+.output {
   display: block;
-  width: 338px;
+  width: 330px;
   height: 50px;
   padding: 14px;
-  border: 0.1em solid #9fbef4;
+  border: 0.2em solid #B11313;
   font-size: 30px;
   text-align: right;
   outline: none;
   margin-bottom: 5px;
   margin-top: 50px
+
 }
 
 #wide {
@@ -45,4 +55,22 @@ button:active {
 
 #superwide {
   width: 370px;
+}
+
+#spiderman {
+  float: right;
+  width: 30%;
+  height: 50%;
+}
+
+#spiderman2 {
+  float: left;
+  width: 30%;
+  height: 50%;
+  transform: rotateY(180deg);
+}
+
+#title {
+  width: 50%;
+  height: 50%;
 }
